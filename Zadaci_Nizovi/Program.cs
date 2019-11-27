@@ -12,8 +12,8 @@ namespace Zadaci_Nizovi
         {
             /*
             * Zadatak 1.
+            * Pronađi najveći broj u nizu    
             * 
-            * Pronađi najveći broj u nizu             
             * Napisati funkciju koja će kao ulazni parametar imati niz brojeva. 
             * Vratiti najveći broj iz niza.
             */
@@ -64,14 +64,14 @@ namespace Zadaci_Nizovi
 
             /*
              * Zadatak 5.
-             * Srednja (prosečna) vrednost
+             * Srednja (prosječna) vrijednost
              * 
              * Napisati funkciju koja će kao ulazni parametar
-             * imati niz brojeva. Vratiti srednju vrednost brojeva.
+             * imati niz brojeva. Vratiti srednju vrijednost brojeva.
              */
             var numbers = new int[] { 5, 6, 5, 6 };
             var prosek = GetAverage(numbers);
-            Console.WriteLine("5. Srednja vrednost zadatih brojeva je {0}", prosek);
+            Console.WriteLine("5. Srednja vrijednost zadatih brojeva je {0}", prosek);
 
             /*
              * Zadatak 6.
@@ -91,7 +91,7 @@ namespace Zadaci_Nizovi
         }
 
         /*
-         * Jos jedan nacin kako se moze proveriti da li je karakter
+         * Jos jedan nacin kako se moze provjeriti da li je karakter
          * razmak (space), koriscenje char.IsWhiteSpace() metoda.
         */
         public static int Spejsovi(string rec)
@@ -118,6 +118,8 @@ namespace Zadaci_Nizovi
             return recenica.Count(char.IsWhiteSpace);
         }
 
+        // Pronađi najveći broj u nizu
+        
         static int FindLargestNum(int[] numbers)
         {
             int max = numbers[0];
@@ -188,7 +190,7 @@ namespace Zadaci_Nizovi
             return prosek;
         }
 
-        public static int ProsecnaVrednost(params int[] nizBrojeva)
+        public static int ProsecnaVrijednost(params int[] nizBrojeva)
         {
             int sumaBrojeva = 0;
 
